@@ -1,5 +1,6 @@
 import { Quiz, User, Email, AppSettings, ModuleCategory } from '../types';
 import { INITIAL_QUIZZES } from '../quizzes';
+import { INITIAL_MODULE_CATEGORIES } from '../constants';
 
 export interface AppData {
     users: User[];
@@ -43,6 +44,7 @@ const getInitialData = (): AppData => ({
     quizzes: INITIAL_QUIZZES,
     emailLog: [],
     settings: defaultSettings,
+    moduleCategories: INITIAL_MODULE_CATEGORIES,
 });
 // --- End: Duplicated initial data ---
 
